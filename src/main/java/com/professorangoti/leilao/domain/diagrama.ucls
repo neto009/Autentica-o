@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="false" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.professorangoti.leilao.domain.ItemDeLeilao" project="aula-leilao" 
+    file="/aula-leilao/src/main/java/com/professorangoti/leilao/domain/ItemDeLeilao.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="133" width="134" x="153" y="67"/>    
+    <display autosize="false" stereotype="false" package="false" initial-value="false" signature="false" 
+      sort-features="false" accessors="true" visibility="false">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.professorangoti.leilao.domain.Lance" project="aula-leilao" 
+    file="/aula-leilao/src/main/java/com/professorangoti/leilao/domain/Lance.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="105" width="123" x="443" y="90"/>    
+    <display autosize="false" stereotype="false" package="false" initial-value="false" signature="false" 
+      sort-features="false" accessors="true" visibility="false">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.professorangoti.leilao.domain.Participante" project="aula-leilao" 
+    file="/aula-leilao/src/main/java/com/professorangoti/leilao/domain/Participante.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="102" width="132" x="678" y="93"/>    
+    <display autosize="false" stereotype="false" package="false" initial-value="false" signature="false" 
+      sort-features="false" accessors="true" visibility="false">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="false"/>    
+    </display>  
+  </class>  
+  <association id="4">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="5" name="arrematante">        
+        <position height="18" width="66" x="607" y="111"/>      
+      </attribute>      
+      <multiplicity id="6" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-66" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="7">    
+    <bendpoint x="360" y="157"/>    
+    <bendpoint x="403" y="157"/>    
+    <bendpoint x="427" y="158"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="8" name="lanceVencedor">        
+        <position height="0" width="0" x="12" y="33"/>      
+      </attribute>      
+      <multiplicity id="9" minimum="0" maximum="1">        
+        <position height="16" width="23" x="409" y="166"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="10">    
+    <bendpoint x="336" y="89"/>    
+    <bendpoint x="434" y="89"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="11" name="lancesRecebidos">        
+        <position height="18" width="91" x="341" y="65"/>      
+      </attribute>      
+      <multiplicity id="12" minimum="0" maximum="2147483647">        
+        <position height="16" width="21" x="396" y="95"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="false" stereotype="false" package="false" initial-value="false" signature="false" 
+    sort-features="false" accessors="true" visibility="false">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="false" package="false" protected="false" private="false" static="false"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
